@@ -7,6 +7,11 @@
     <title>laravel-comics</title>
 </head>
 <body>
-    <h1>tv</h1>
+    {{-- includo header --}}
+    @include('partials.header')
+    {{-- ricambio dinamico del contenuto --}}
+    @yield('content')
+    {{-- includo footer --}}
+    @include('partials.footer')
 </body>
 </html>
