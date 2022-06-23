@@ -1,6 +1,16 @@
-li {
-  list-style: none;
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Lato&family=Raleway&display=swap);
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-li a {
-  text-decoration: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
 }

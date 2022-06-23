@@ -1,0 +1,35 @@
+@import './vars';
+
+@mixin d-flex-jc-ac {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin dcImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin l-r-footer {
+  width: calc(100% / 2);
+  height: 100%;
+}
+
+@mixin link {
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #363636;
+}
+
+@mixin footer-links {
+  margin: 10px 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 12px;
+  color: lighten($coloreLink, 40%);
+}
