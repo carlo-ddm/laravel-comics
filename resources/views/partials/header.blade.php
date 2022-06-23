@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <img src={{ asset('img/dc-logo.png')}}" alt="dc_logo" />
+        <img src="{{ asset('img/dc-logo.png')}}" alt="dc_logo" />
         <ul>
             <li><a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{ route('characters')}}">characters</a></li>
 

@@ -45,7 +45,7 @@ header .container ul li a {
   color: #363636;
 }
 header .container ul li a:hover, header .container ul li a.active {
-  background-color: rgb(226, 226, 226);
+  border-bottom: 2px solid #0B65FC;
 }
 
 main {

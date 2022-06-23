@@ -18,7 +18,8 @@ header .container {
           @include link;
           &:hover,
           &.active {
-            background-color: rgb(226, 226, 226);
+            border-bottom: 2px solid $colorePrimario;
+
           }
 
         }
