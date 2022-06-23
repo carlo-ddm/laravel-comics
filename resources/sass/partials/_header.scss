@@ -1,0 +1,27 @@
+header .container {
+    @include d-flex-jc-ac;
+    height: 100px;
+
+    img {
+      margin: 0 10px;
+      width: 70px;
+    }
+
+    ul {
+      @include d-flex-jc-ac;
+
+      li {
+        @include d-flex-jc-ac;
+        list-style: none;
+
+        a {
+          @include link;
+          &:hover,
+          &.active {
+            background-color: rgb(226, 226, 226);
+          }
+
+        }
+      }
+    }
+  }

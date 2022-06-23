@@ -1,0 +1,22 @@
+.icon-items {
+    @include d-flex-jc-ac;
+    background-color: $colorePrimario;
+    height: 110px;
+    ul {
+      @include d-flex-jc-ac;
+      height: 90px;
+      li {
+        @include d-flex-jc-ac;
+        list-style: none;
+        margin: 0 30px;
+        img {
+          width: 40px;
+          margin: 10px;
+        }
+        span {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+    }
+  }

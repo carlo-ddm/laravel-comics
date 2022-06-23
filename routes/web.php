@@ -43,15 +43,15 @@ Route::get('/collezioni', function () {
 
 Route::get('/video', function () {
     return view('videos');
-})->name('videos ');
+})->name('videos');
 
 Route::get('/fans', function () {
     return view('fans');
-})->name('fans ');
+})->name('fans');
 
 Route::get('/novità', function () {
     return view('news');
-})->name('news ');
+})->name('news');
 
 Route::get('/shop', function () {
     return view('shop');
