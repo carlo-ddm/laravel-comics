@@ -1,5 +1,5 @@
 <nav>
-    <ul>
+    <ul class="d-flex justify-content-around">
         <li><a href="{{ route('characters')}}">characters</a></li>
         <li><a href="{{ route('comics')}}">comics</a></li>
         <li><a href="{{ route('movies')}}">movies</a></li>

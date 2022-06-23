@@ -4,4 +4,5 @@ Create poi una rotta per visualizzare la lista di tutti i fumetti recuperati da 
 @extends('layouts.main')
 @section('content')
     <h1>Homepage</h1>
+    @include('partials.home-button')
 @endsection
