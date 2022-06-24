@@ -5,25 +5,43 @@ Create poi una rotta per visualizzare la lista di tutti i fumetti recuperati da 
 @section('content')
     <main>
         <div class="content">
-            <div class="jumbotron">
+            <div class="jumbotron"></div>
+            <div class="container">
+                @foreach ( $comics as $comic )
+                {{-- @dump($comics) --}}
+                <div class="card">
+                    <img src="{{$comic->image}}" alt="{{$comic->title}}">
+                    <div>{{$comic->title}}</div>
+                    <div>{{$comic->type}}</div>
+                </div>
+                @endforeach
             </div>
-            <div class="container" >
-              {{-- <div class="card" v-for="(card,index) in cards" :key="index">
-                <img :src="card.thumb" alt="">
-                <span>{{card.series}}</span>
-              </div> --}}
-              <button><strong>load more</strong></button>
-            </div>
-          </div>
+        </div>
     </main>
     <div class="icon-items" >
         <div class="container">
-        {{-- <ul>
-          <li v-for="(icon,index) in icons" :key="`icons_${index}`" >
-            <img :src="`${icon.src}`" :alt="icon.iconTitle">
-            <span>{{icon.iconTitle}}</span>
+        <ul>
+          <li>
+            <img src="../img/buy-comics-digital-comics.png" alt="buy-comics-digital-comics">
+            <span>digital comics</span>
           </li>
-        </ul> --}}
+          <li>
+            <img src="../img/buy-comics-merchandise.png" alt="buy-comics-merchandise">
+            <span>dc merchandis</span>
+          </li>
+          <li>
+            <img src="../img/buy-comics-subscriptions.png" alt="icon.iconTitle">
+            <span>subscription</span>
+          </li>
+          <li>
+            <img src="../img/buy-comics-shop-locator.png" alt="icon.iconTitle">
+            <span>comic shop locator</span>
+          </li>
+          <li>
+            <img src="../img/buy-dc-power-visa.svg" alt="icon.iconTitle">
+            <span>dc power visa</span>
+          </li>
+        </ul>
         </div>
       </div>
 @endsection
