@@ -1,3 +1,1 @@
-<button>
-    <a href="{{ route('home')}}">Home</a>
-</button>
+{{-- <li><a class="{{Route::currentRouteName() === 'home' ? 'active' : ''}}" href="{{ route('home')}}">home</a></li> --}}

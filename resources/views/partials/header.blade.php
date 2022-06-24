@@ -2,6 +2,11 @@
     <div class="container">
         <img src="{{ asset('img/dc-logo.png')}}" alt="dc_logo" />
         <ul>
+
+            @if(Route::currentRouteName() != 'home')
+            <li><a href="{{ route('home')}}">home</a></li>
+            @endif
+
             <li><a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{ route('characters')}}">characters</a></li>
 
             <li><a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{ route('comics')}}">comics</a></li>
